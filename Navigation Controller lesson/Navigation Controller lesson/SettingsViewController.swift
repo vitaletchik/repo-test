@@ -24,6 +24,10 @@ class SettingsViewController: UIViewController {
          }
     }
     
+    func test() {
+        print(hello)
+    }
+    
 //    @IBAction func goToGreeen(_ sender: UIButton) {
 //        let newVC = storyboard?.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
 //        let text = textField.text
@@ -31,6 +35,6 @@ class SettingsViewController: UIViewController {
 //        navigationController?.pushViewController(newVC, animated: true)
 //   }
     
-  
+  // test kraken push
 
 }
