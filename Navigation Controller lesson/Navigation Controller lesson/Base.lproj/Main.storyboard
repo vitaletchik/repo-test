@@ -34,8 +34,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2019" translatesAutoresizingMaskIntoConstraints="NO" id="tC7-fe-FcR">
-                                <rect key="frame" x="132.5" y="278.5" width="110" height="110"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_2019" translatesAutoresizingMaskIntoConstraints="NO" id="tC7-fe-FcR">
+                                <rect key="frame" x="132.5" y="144" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="Yul-VA-bYt"/>
                                     <constraint firstAttribute="height" constant="110" id="a7P-Jd-1rr"/>
@@ -46,11 +46,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Детки Кириленко" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWK-rh-bGB">
+                                <rect key="frame" x="117.5" y="274" width="140" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="дурачимся" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bx0-xE-qix">
+                                <rect key="frame" x="151" y="314.5" width="73.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tC7-fe-FcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5A8-QY-oIu"/>
-                            <constraint firstItem="tC7-fe-FcR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xhp-Lr-nM7"/>
+                            <constraint firstItem="tC7-fe-FcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="00E-pA-r3d"/>
+                            <constraint firstItem="tC7-fe-FcR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="5hw-Kg-Tc0"/>
+                            <constraint firstItem="sWK-rh-bGB" firstAttribute="top" secondItem="tC7-fe-FcR" secondAttribute="bottom" constant="20" id="8n1-Qz-OAA"/>
+                            <constraint firstItem="sWK-rh-bGB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Slg-7I-e1l"/>
+                            <constraint firstItem="Bx0-xE-qix" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c8z-W6-REV"/>
+                            <constraint firstItem="Bx0-xE-qix" firstAttribute="top" secondItem="sWK-rh-bGB" secondAttribute="bottom" constant="20" id="ibg-Bc-DHg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,10 +81,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="avatarImage" destination="tC7-fe-FcR" id="H1h-pJ-M6b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1114.4000000000001" y="131.78410794602701"/>
         </scene>
         <!--Настройки-->
         <scene sceneID="bbJ-o8-6Xg">

@@ -9,14 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var avatarImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    func printOk() {
-        print("Ok")
+       avatarImage.layer.borderWidth = 3.0
+        avatarImage.layer.borderColor = UIColor.lightGray.cgColor
     }
 
 
