@@ -49,7 +49,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Детки Кириленко" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWK-rh-bGB">
                                 <rect key="frame" x="117.5" y="274" width="140" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="дурачимся" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bx0-xE-qix">
@@ -59,7 +59,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tC7-fe-FcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="00E-pA-r3d"/>
                             <constraint firstItem="tC7-fe-FcR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="5hw-Kg-Tc0"/>
@@ -73,7 +73,7 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="5C8-Ob-Ctu"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Профиль" id="AUN-hf-hbr">
+                    <navigationItem key="navigationItem" title="Профиль" id="AUN-hf-hbr" colorLabel="IBBuiltInLabel-Blue">
                         <barButtonItem key="rightBarButtonItem" image="imgonline-com-ua-Resize-hRPhJbH6ne" id="Ygs-4b-I84">
                             <connections>
                                 <segue destination="0a1-h1-TJg" kind="show" id="4hR-bq-3IV"/>
@@ -97,16 +97,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aof-tq-erW">
-                                <rect key="frame" x="55" y="272" width="285" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aof-tq-erW">
+                                <rect key="frame" x="50" y="318.5" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.53130226550319526" green="1" blue="0.026470573652321971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="На зеленый екран"/>
                                 <connections>
                                     <segue destination="JBy-93-ye1" kind="show" identifier="goToGreen" id="jZV-M6-DQ2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xva-1h-0aW">
-                                <rect key="frame" x="55" y="114" width="275" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xva-1h-0aW">
+                                <rect key="frame" x="50" y="114" width="275" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -114,10 +114,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Aof-tq-erW" firstAttribute="top" secondItem="uj6-xa-G61" secondAttribute="top" constant="50" id="7LR-nC-pfP"/>
-                            <constraint firstItem="Xva-1h-0aW" firstAttribute="top" secondItem="uj6-xa-G61" secondAttribute="top" constant="50" id="cwJ-hJ-RLu"/>
-                            <constraint firstItem="uj6-xa-G61" firstAttribute="trailing" secondItem="Aof-tq-erW" secondAttribute="trailing" constant="45" id="gQv-ZJ-BXz"/>
-                            <constraint firstItem="Aof-tq-erW" firstAttribute="leading" secondItem="uj6-xa-G61" secondAttribute="leading" constant="45" id="lTb-oG-7mk"/>
+                            <constraint firstItem="Xva-1h-0aW" firstAttribute="centerX" secondItem="h36-EK-pzl" secondAttribute="centerX" id="FBq-uO-kMX"/>
+                            <constraint firstItem="uj6-xa-G61" firstAttribute="trailing" secondItem="Aof-tq-erW" secondAttribute="trailing" constant="50" id="H5C-cx-AQv"/>
+                            <constraint firstItem="Xva-1h-0aW" firstAttribute="leading" secondItem="uj6-xa-G61" secondAttribute="leading" constant="50" id="JQm-K5-7aY"/>
+                            <constraint firstItem="Xva-1h-0aW" firstAttribute="top" secondItem="uj6-xa-G61" secondAttribute="top" constant="50" id="Oa0-MI-tY7"/>
+                            <constraint firstItem="Xva-1h-0aW" firstAttribute="centerX" secondItem="h36-EK-pzl" secondAttribute="centerX" id="YH4-HR-lhS"/>
+                            <constraint firstItem="Aof-tq-erW" firstAttribute="centerX" secondItem="h36-EK-pzl" secondAttribute="centerX" id="Yxn-tl-VaH"/>
+                            <constraint firstItem="Aof-tq-erW" firstAttribute="leading" secondItem="uj6-xa-G61" secondAttribute="leading" constant="50" id="dKY-81-DyO"/>
+                            <constraint firstItem="uj6-xa-G61" firstAttribute="trailing" secondItem="Xva-1h-0aW" secondAttribute="trailing" constant="50" id="ite-wA-tDk"/>
+                            <constraint firstItem="Aof-tq-erW" firstAttribute="centerY" secondItem="h36-EK-pzl" secondAttribute="centerY" id="xTi-h1-66r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uj6-xa-G61"/>
                     </view>
@@ -127,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0N-xC-tnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="132"/>
+            <point key="canvasLocation" x="1824.8" y="131.78410794602701"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="7FN-eK-0pB">
